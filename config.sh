@@ -86,6 +86,11 @@ case "$1" in
 	repo_sync nexus-4
 	;;
 
+"X02")
+	echo DEVICE=X02 >> .tmp-config &&
+	repo_sync X02
+	;;
+
 "optimus-l5")
 	echo DEVICE=m4 >> .tmp-config &&
 	repo_sync $1
@@ -136,6 +141,7 @@ case "$1" in
 	echo Valid devices to configure are:
 	echo - galaxy-s2
 	echo - galaxy-nexus
+	echo - nexus-4
 	echo - nexus-4
 	echo - nexus-s
 	echo - nexus-s-4g
